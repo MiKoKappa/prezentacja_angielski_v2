@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>
+      Application interface design - what it is and how to do it well?
+    </title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/league.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>Application interface design</h3>
+          <p style="font-size: 1.4rem">What is it and how to do it well?</p>
+          <p style="opacity: 0.2; font-size: 0.8rem">Mikołaj Tkaczyk</p>
+
+          <aside class="notes">
+            Today I would like to say a few words about interface design in IT
+            applications. Why is it so important? What is it all about and how
+            to do it well to make people we target full of enjoyment?
+          </aside>
+        </section>
+        <section>
+          <section>
+            <h2>UX / UI</h2>
+            <aside class="notes">
+              Let's start with an acronym UX/UI. If you are into IT even a tiny
+              bit you must have seen that 4 letters before. It consists of two
+              parts.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h2>UX</h2>
+            <aside class="notes">UX is an acronym for user experience.</aside>
+          </section>
+          <section data-auto-animate>
+            <h2>UX</h2>
+            <p>
+              It is the process of developing and improving the quality of
+              interaction between a user and all facets of a company.
+            </p>
+          </section>
+          <section data-auto-animate>
+            <h2>UX</h2>
+            <p>
+              It is the process of developing and improving the quality of
+              interaction between a user and all facets of a company.
+            </p>
+            <p>
+              The ultimate purpose of UX design is to create easy, efficient,
+              relevant, and all-round pleasant experiences for the user.
+            </p>
+            <aside class="notes">And what is imporant: not only visually</aside>
+          </section>
+          <section data-auto-animate>
+            <h2>UX</h2>
+            <p>
+              It is the process of developing and improving the quality of
+              interaction between a user and all facets of a company.
+            </p>
+            <p>
+              The ultimate purpose of UX design is to create easy, efficient,
+              relevant, and all-round pleasant experiences for the user.
+            </p>
+            <p>(not only visually!)</p>
+          </section>
+        </section>
+
+        <section>
+          <section data-auto-animate data-auto-animate-restart>
+            <h2>UI</h2>
+            <aside class="notes">
+              UI on the other hand is an acronym for user interface.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h2>UI</h2>
+            <p>
+              The goal of UI design is to visually guide the user through a
+              product's interface.
+            </p>
+          </section>
+          <section data-auto-animate>
+            <h2>UI</h2>
+            <p>
+              The goal of UI design is to visually guide the user through a
+              product's interface.
+            </p>
+            <p>
+              It's all about creating an intuitive experience that doesn't
+              require the user to think too much!
+            </p>
+          </section>
+          <section data-auto-animate>
+            <h2>UI</h2>
+            <p>
+              The goal of UI design is to visually guide the user through a
+              product's interface.
+            </p>
+            <p>
+              It's all about creating an intuitive experience that doesn't
+              require the user to think too much!
+            </p>
+            <p>It should also be visually pleasant!</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <p>You need graphic design skills as UX/UI designer.</p>
+            <aside class="notes">
+              To not create abominations such as this.
+            </aside>
+          </section>
+          <section>
+            <img
+              src="assets/design.webp"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+          </section>
+          <section>
+            <img
+              src="assets/worst_1.jpg"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+          </section>
+          <section>
+            <img
+              src="assets/worst_2.jpg"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>UX and UI are not the same!</h3>
+            <aside class="notes">
+              Enough eyehurting visuals. Let's discuss why UX and UI are not the
+              same thing as many people would say.
+            </aside>
+          </section>
+          <section>
+            <p>
+              UX is the foundation to UI design.<br />You cannot start the
+              second without the first one.
+            </p>
+            <aside class="notes">
+              UX is the first step for creating a great product for the
+              customer. You can't skip UX or change the order (if you aim for
+              the success of course).
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: full;
+              "
+            >
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UX</p>
+              </div>
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UI</p>
+              </div>
+            </div>
+            <aside class="notes">
+              Let's see some features regarding UX and UI.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: full;
+              "
+            >
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UX</p>
+                <ul>
+                  <li>Competitor analysis</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UI</p>
+                <ul>
+                  <li>Understanding of UX design process and research</li>
+                </ul>
+              </div>
+            </div>
+            <aside class="notes">
+              To properly design an app in UX first thing you need is competitor
+              analysis and in UI you need UX design process and research. So now
+              you see why UX is a first step.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: full;
+              "
+            >
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UX</p>
+                <ul>
+                  <li>Competitor analysis</li>
+                  <li>Customer analysis and user resarch</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UI</p>
+                <ul>
+                  <li>Understanding of UX design process and research</li>
+                  <li>Customer analysis</li>
+                </ul>
+              </div>
+            </div>
+            <aside class="notes">
+              In UI you analyze customer needs. In UX you also pay attention to
+              what a typical user would do with the app.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: full;
+              "
+            >
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UX</p>
+                <ul>
+                  <li>Competitor analysis</li>
+                  <li>Customer analysis and user resarch</li>
+                  <li>Product structure and strategy</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UI</p>
+                <ul>
+                  <li>Understanding of UX design process and research</li>
+                  <li>Customer analysis</li>
+                  <li>Design research</li>
+                </ul>
+              </div>
+            </div>
+            <aside class="notes">
+              UI is all about researching design patterns. In UX you need to
+              define the overall product structure and strategy for market
+              placement.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: full;
+              "
+            >
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UX</p>
+                <ul>
+                  <li>Competitor analysis</li>
+                  <li>Customer analysis and user resarch</li>
+                  <li>Product structure and strategy</li>
+                  <li>Content developement</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UI</p>
+                <ul>
+                  <li>Understanding of UX design process and research</li>
+                  <li>Customer analysis</li>
+                  <li>Design research</li>
+                  <li>Branding and graphic developement</li>
+                </ul>
+              </div>
+            </div>
+            <aside class="notes">
+              UX focuses also on what you present, not only branding and
+              graphical aspects of your work.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: full;
+              "
+            >
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UX</p>
+                <ul>
+                  <li>Competitor analysis</li>
+                  <li>Customer analysis and user resarch</li>
+                  <li>Product structure and strategy</li>
+                  <li>Content developement</li>
+                  <li>Flow prototyping and wireframing</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  margin-right: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  align-items: start;
+                "
+              >
+                <p style="font-weight: bold">UI</p>
+                <ul>
+                  <li>Understanding of UX design process and research</li>
+                  <li>Customer analysis</li>
+                  <li>Design research</li>
+                  <li>Branding and graphic developement</li>
+                  <li>User guides and storylines</li>
+                </ul>
+              </div>
+            </div>
+            <aside class="notes">
+              In aspect of graphing and creating flows: UX is creating
+              prototypes of a usage and only wireframe the app layout, UI
+              creates user guides for using the app and makes storylines which
+              engage users, but it is not focused on planning strict
+              psychological processes when using the product.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <p>There are some common features.</p>
+            <aside class="notes">
+              What can be pushing us to the thought that UX and UI are the same
+              are some similarities.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <ul>
+              <li>Design thinking</li>
+            </ul>
+            <aside class="notes">
+              In both tasks you need to design and use your creativity.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <ul>
+              <li>Design thinking</li>
+              <li>Awareness of users needs</li>
+            </ul>
+            <aside class="notes">
+              Both UX and UI need to address users needs.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <ul>
+              <li>Design thinking</li>
+              <li>Awareness of users needs</li>
+              <li><b>Same goal: A product that delights users</b></li>
+            </ul>
+            <aside class="notes">
+              And they also share same goal - creating a product that delights
+              users
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <p>Why is it so important?</p>
+            <aside class="notes">
+              Why is this whole design trend so important?
+            </aside>
+          </section>
+          <section>
+            <p>It is all about companies' demand.</p>
+          </section>
+          <section>
+            <p>
+              To gain and retain customers the product must be presented in the
+              best possible way.
+            </p>
+            <aside class="notes">
+              How many times you have searched for something, found a page and
+              imediatelly quit it because of tons of popups, agreements and so
+              on? Companies are starting to see that a frustrated client is the
+              worst thing that can happen. Therefore they are spending more
+              money on planning their product to better fit users preferences,
+              to bring joy and satisfaction to people using it, because that is
+              what brings cash.
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <p>What tools are available for UX/UI designers?</p>
+        </section>
+
+        <section>
+          <section data-auto-animate data-auto-animate-restart>
+            <h3>User research tools</h3>
+            <aside class="notes">
+              I would like to split the tools into three groups, based on
+              designing steps. The first one is user resarch tools. To better
+              know what the user really wants and what he aims for you need to
+              survey, interview and find value in gathered data.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>User research tools</h3>
+            <img
+              src="assets/dovetail.png"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              Dovetail - creating research notes based on interviews
+            </p>
+            <aside class="notes">
+              Dovetail is an example of note taking app for UX researchers. It
+              enables you to produce voice transciptions, annotate them,
+              collaborate on notes with your whole team.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>User research tools</h3>
+            <img
+              src="assets/google_forms.png"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              Google Forms - collecting customer satisfaction data by forms
+            </p>
+            <aside class="notes">
+              Next tool should be a well know one in our group. Google Forms is
+              making creating and getting the results of online test forms an
+              easy task. You can use it to question potential users about their
+              needs for example.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>User research tools</h3>
+            <img
+              src="assets/google-analytics.jpeg"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              Google Analytics - finding patterns in collected data
+            </p>
+            <aside class="notes">
+              After all the data is collected you need to get value from it.
+              Google Analytics is a tool for aggregating, finding patterns and
+              seeing what changes would bring the most positive impact on the
+              product.
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <h3>Design tools</h3>
+            <aside class="notes">
+              The next group is design tools for when you know what you should
+              do and you need to now make it graphically available.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>Design tools</h3>
+            <img
+              src="assets/lucidchart.png"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              Lucidchart - flowcharting to visualize user journey
+            </p>
+            <aside class="notes">
+              Lucidchart is an UML tool for creating flowcharts of user journey,
+              showing steps or states in which a user can be and what actions he
+              need to take on to continue to desired state.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>Design tools</h3>
+            <img
+              src="assets/omnigraffle.png"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              OmniGraffle - diagramming navigation in apps focusing on Apple
+              devices
+            </p>
+            <aside class="notes">
+              OmniGraffle is similar but pays more attention to graphical aspect
+              of user experience. It enables to create flows of mobile app
+              views, usefull for prototyping Apple iOS programs.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>Design tools</h3>
+            <img
+              src="assets/balsamiq.jpeg"
+              style="width: 45%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              Balsamiq - wireframing tool for quick UI prototype devices
+            </p>
+            <aside class="notes">
+              Balsamiq is all about wireframing and transforming ideas into
+              basic UI templates. You can use predefined blocks of app elements
+              to prototype layouts.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>Design tools</h3>
+            <img
+              src="assets/figma.gif"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              Figma - design and prototyping tool built with components in mind
+            </p>
+            <aside class="notes">
+              Figma is the most complex tool in this group. When using it you
+              can design whole UI view, split parts into components, export code
+              for programmers, and prepare working prototype of app to show your
+              client.
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section data-auto-animate data-auto-animate-restart>
+            <h3>Satisfaction checking tools</h3>
+            <aside class="notes">
+              The last group is satisfaction checking tools. After the app has
+              been published you can track the usage and adjust minor things
+              that aren't perfect.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>Satisfaction checking tools</h3>
+            <img
+              src="assets/hotjar_heatmap.jpeg"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              Hotjar Heatmaps - graphical representation of user interests on
+              page
+            </p>
+            <aside class="notes">
+              Hotjar Heatmaps produce graphical representation of what a
+              statistical user does on your page or app. It tracks cliks, drags,
+              scrolls and hovers to show UX/UI designer what brings more
+              interest to the user.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>Satisfaction checking tools</h3>
+            <img
+              src="assets/luckyorange.jpeg"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              Lucky Orange - conversion rate optimization tool based on heatmaps
+              and session recordings
+            </p>
+            <aside class="notes">
+              Lucky Orange is very similar to hotjar heatmaps, but it focuses on
+              business part - optimizing the conversion rate, mainly on online
+              shopping sites.
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h3>Satisfaction checking tools</h3>
+            <img
+              src="assets/smartlook.png"
+              style="width: 60%; border-radius: 1.5rem"
+            />
+            <p style="font-size: 1rem; margin-top: -1.2rem; opacity: 0.7">
+              SmartLook - All-in-one app analytics tool
+            </p>
+            <aside class="notes">
+              SmartLook is an all in one solution: analyzing user interaction by
+              heatmaps and session recording, timelines of views and other
+              usefull information sources.
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <h3>Thank you for your attention</h3>
+        </section>
+
+        <section data-auto-animate>
+          <p>Glossary</p>
+        </section>
+        <section data-auto-animate>
+          <p>Glossary</p>
+          <li>to emerge - /ɪˈmɜːdʒ/</li>
+          <li>neural network - /ˌnjʊə.rəl ˈnet.wɜːk/</li>
+          <li>to resemble - /rɪˈzem.bəl/</li>
+          <li>pseudo-random - /sjuː.dəʊ-ˈræn.dəm/</li>
+          <li>to estimate - /ˈes.tɪ.meɪt/</li>
+          <li>to subtract - /səbˈtrækt/</li>
+          <li>demanding - /dɪˈmɑːn.dɪŋ/</li>
+          <li>seamless - /ˈsiːm.ləs/</li>
+          <li>coherent - /kəʊˈhɪə.rənt/</li>
+          <li>to tweak - /twiːk/</li>
+        </section>
+      </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+
+      // Tutaj można zmienić parametry slajdów - numer na slajdzie itp.
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
